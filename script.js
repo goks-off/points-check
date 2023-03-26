@@ -10,7 +10,8 @@ function myFunction(){
     xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
 		var text=this.responseText;
-        if(text=='0'){
+        //window.alert(text);
+        if(text=='[]'){
             window.alert("Please enter valid email ID");
 
         }
