@@ -1,0 +1,179 @@
+/* CSS for desktop view */
+body {
+background-color: #f2f2f2;
+font-family: Arial, sans-serif;
+}
+
+#title {
+text-align: center;
+margin-top: 50px;
+}
+
+#gg {
+color: #008080;
+font-size: 48px;
+font-weight: bold;
+text-shadow: 2px 2px #d9d9d9;
+}
+
+#form {
+margin: 50px auto;
+max-width: 500px;
+padding: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0px 0px 10px #d9d9d9;
+}
+
+label {
+font-size: 24px;
+color: #008080;
+}
+
+input[type="email"] {
+font-size: 24px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+width: 100%;
+box-sizing: border-box;
+margin-bottom: 20px;
+}
+
+#verifyButton {
+font-size: 24px;
+padding: 10px;
+background-color: #008080;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease;
+display: block;
+margin: 0 auto;
+}
+
+#verifyButton {
+/* existing styles for the button */
+animation-name: pulse;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+
+@keyframes pulse {
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(1.2);
+}
+100% {
+transform: scale(1);
+}
+}
+
+
+
+#verifyButton:hover {
+background-color: #00b3b3;
+}
+
+#result {
+margin: 50px auto;
+max-width: 800px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0px 0px 10px #d9d9d9;
+padding: 20px;
+}
+
+#tab {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+#tab th {
+font-size: 24px;
+color: #008080;
+padding: 10px;
+}
+
+#tab td {
+font-size: 20px;
+color: #333;
+padding: 10px;
+border-bottom: 1px solid #ccc;
+}
+#tab th, #tab td {
+  text-align: center;
+}
+
+
+
+/* CSS for mobile view */
+@media only screen and (max-width: 600px) {
+body {
+font-size: 18px;
+}
+
+#gg {
+font-size: 36px;
+}
+
+#form {
+margin: 10px;
+}
+
+label {
+font-size: 24px;
+}
+
+input[type="email"] {
+font-size: 24px;
+}
+
+#verifyButton {
+font-size: 24px;
+margin-top: 10px;
+padding: 10px;
+}
+
+#verifyButton {
+  /* existing styles for the button */
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes pulse {
+  0% {
+  transform: scale(1);
+  }
+  50% {
+  transform: scale(1.2);
+  }
+  100% {
+  transform: scale(1);
+  }
+  }
+
+#result {
+margin: 10px;
+}
+
+#tab th {
+font-size: 20px;
+padding: 5px;
+}
+
+#tab td {
+font-size: 20px;
+padding: 5px;
+}
+#tab th, #tab td {
+  text-align: center;
+  }
+}
