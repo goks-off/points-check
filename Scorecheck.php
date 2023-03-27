@@ -1,8 +1,8 @@
 <?php
-$host = 'ticketdb.cvh7mcn3tncr.ap-south-1.rds.amazonaws.com';
-$user = 'admin';
-$pass = 'jithu007';
-$db_name = 'DemoDB';
+$host = '--';
+$user = '--';
+$pass = '--';
+$db_name = '--';
 
 $conn =null;
 $conn = new mysqli($host, $user, $pass, $db_name);
